@@ -18,3 +18,33 @@ int main()
 }
 
 //Write definition of stat() here 
+void stat(const double a[],int n,double b[]){
+    double sum=0,X=0;
+    for (int i = 0; i < n; i++)
+    {
+        sum+=a[i];
+    }
+
+    b[0]=sum/n;
+    
+    for (int i = 0; i < n; i++)
+    {
+        X+=pow(a[i],2); //ซิกม่าXi^2
+    }
+    
+    b[1]=sqrt(X/n-pow(b[0],2));
+
+    for (int j = 0; j < n; j++)
+    {
+        if(b[3]>a[j]){ b[3]=a[j];}
+        if(b[2]<a[j]){ b[2]=a[j];}
+    }
+    
+   
+
+
+
+
+    
+    
+}
